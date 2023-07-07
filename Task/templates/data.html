@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Key-Value Pairs</title>
+</head>
+<body>
+    <h1>Key-Value Pairs</h1>
+    <table>
+        <tr>
+            <th>Key</th>
+            <th>Count</th>
+        </tr>
+        {% for key, count in count_dict.items() %}
+        <tr>
+            <td>{{ key }}</td>
+            <td>{{ count }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Data</title>
+    <style>
+        .body {
+            display: block;
+            margin: 8px; 
+            text-align: center;
+            background-color: grey;
+        }
+        .content {
+            background-color: silver;
+            border-radius: 10px;
+            margin-left: 390px;
+            margin-top: 10px;
+            margin-bottom: 50px;
+            height: 350px;
+            width: 450px; 
+            text-align: center; 
+        }
+        .form {
+            display: flex;
+            flex-direction: column;
+            padding-left: 10px;        
+        }
+    </style>  
+</head>
+<body>
+    <div class="content">
+        <h1>Personal Info</h1>
+        <form action="/route" method="post" enctype="multipart/form-data">
+            <div>
+                <label>Number</label>
+                <input type="text" id="mobilenumber" name="number" placeholder="Number"> 
+            </div>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+</body>
+</html>
